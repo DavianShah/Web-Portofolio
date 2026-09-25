@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Lime Frost — 21st.dev/@serafimcloud/themes, dark variant.
+     Slate surfaces + one lime accent; raise and line share slate-800 because
+     the theme defines border and secondary as the same tone. */
+  --color-bg: #020617;
+  --color-panel: #0f172a;
+  --color-raise: #1e293b;
+  --color-line: #1e293b;
+  --color-line-hi: #334155;
+
+  --color-text: #cbd5e1;
+  --color-hi: #f8fafc;
+  --color-dim: #a5b5cb;
+  --color-quiet: #8494ae;
+
+  /* the one accent */
+  --color-accent: #aff33e;
+  --color-accent-ink: #020617;
+
+  /* semantic, terminal output only */
+  --color-ok: #4ade80;
+  --color-warn: #facc15;
+  --color-bad: #f87171;
+
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+}
+
+@theme inline {
+  --shadow-win: 0 18px 40px -24px rgb(0 0 0 / 0.9);
+}

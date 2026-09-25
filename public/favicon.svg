@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="_">
+  <rect width="32" height="32" rx="7" fill="#0a0e17" />
+  <rect x="1" y="1" width="30" height="30" rx="6.5" fill="none" stroke="#1f2a3c" />
+  <text
+    x="16"
+    y="21"
+    fill="#22d3ee"
+    font-family="ui-monospace, 'JetBrains Mono', monospace"
+    font-size="13"
+    font-weight="700"
+    text-anchor="middle"
+  >&gt;_</text>
+</svg>
