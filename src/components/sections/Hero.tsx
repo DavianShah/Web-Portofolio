@@ -44,9 +44,15 @@ export function Hero() {
 
   return (
     <section id="main" className="mb-16 sm:mb-24">
-      <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-12">
-        <div>
-          <h1 className="text-4xl leading-[1.05] sm:text-5xl">{personal.name}</h1>
+      <div className="grid gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-12">
+        <div className="flex flex-col justify-center">
+          <h1 className="text-4xl leading-[1.05] sm:text-5xl">
+            {personal.name.split(' ').map((word) => (
+              <span key={word} className="block">
+                {word}
+              </span>
+            ))}
+          </h1>
           <p className="mt-5 max-w-md text-dim">
             {personal.title} at {personal.university}. Working toward{' '}
             {personal.careerGoals.join(' and ')}.
@@ -54,7 +60,7 @@ export function Hero() {
 
           <a
             href={`mailto:${personal.email}`}
-            className="mt-8 inline-flex min-h-11 items-center gap-2 border border-accent px-4 py-2.5 font-mono text-sm text-accent transition-colors hover:bg-accent hover:text-accent-ink"
+            className="mt-8 inline-flex w-fit min-h-11 items-center gap-2 border border-accent px-4 py-2.5 font-mono text-sm text-accent transition-colors hover:bg-accent hover:text-accent-ink"
           >
             <span aria-hidden="true">&gt;</span> contact me
           </a>
@@ -63,6 +69,7 @@ export function Hero() {
         <MacWindow
           title="davian@portfolio: ~/main.c"
           meta="focused · C (UTF-8)"
+          className="lg:mt-8"
           bodyClassName="flex flex-col"
         >
           <div className="flex overflow-x-auto px-3 py-4 font-mono text-[12.5px] leading-[1.6] sm:px-4 sm:text-[13px]">
